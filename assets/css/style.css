@@ -1,0 +1,31 @@
+#panel
+
+{
+	position: relative;
+	bottom: -300px;
+	border:none;
+
+}
+
+#panel-background
+{
+	background-color: black;
+
+
+}
+
+
+
+#image
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#options
+{
+	font-size: 20px;
+}
+
