@@ -2,12 +2,8 @@
 
 {
 	position: relative;
-	bottom: -200px;
-	right: 100px;
+	bottom: -300px;
 	border:none;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
 
 }
 
@@ -33,7 +29,7 @@
 	font-size: 20px;
 }
 
-.button
+#start
 {
-	background-color: tomato;
+	text-align: center;
 }

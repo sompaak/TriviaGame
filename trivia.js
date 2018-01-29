@@ -1,54 +1,267 @@
- $(document).ready(function (){
- 	// quiz data
- 	var wins = 0;
- 	var losses = 0;
-	var quiz = [
+  
+
+
+
+$(document).ready(function () 
+{
+	var wins = 0;
+	var losses = 0;
+	//var hasBeenClicked = false;
+	$(".questions").hide();
+	//checkWins();
+
+
+
+	 	$("#start").click(function(){
+
+	 	$("#start").hide();
+	 	
+	 	$(".qa1").show();
+
+		$('#button-1').click(function () 
 		{
-			question:"q1",
-			possibleAnsers: ["a1","a2", "a3", "a4", "a5"],
-		}
-	]
+				
+				wins++;
+				console.log(wins)
+				$(".qa1").hide();
+				$(".qa2").show();
+			    // The link has been clicked.
+			 
+			
+		});
 
-	//where we are at in the game	
-   var currentQuestion = 0;
+		$("#losses, #losses-1, #losses-2 ").click(function () 
+			{
+				
+				losses++;
+				console.log("losses "+losses);
+				$(".qa1").hide();
+				$(".qa2").show();
+			});
 
-   // evaluation to start the game
-   if(currentQuestion<quiz.length){
-   	var currentQuiz = quiz[currentQuestion];
-   		// get question and show it on page
-   		console.log("currentQuestion",currentQuiz.question);
-   		var questionWrap = $("<h3>");
-   		questionWrap.text(currentQuiz.question);
-   		$(".questions").append(questionWrap);
+		$('#button-7').click(function () 
+		{
+				wins++;
+				console.log(wins)
+				$(".qa2").hide();
+				$(".qa3").show();
+			    // The link has been clicked.
+			
+			
+		});
 
-   		// get all options and show on page
-   		var quizOptions = currentQuiz.possibleAnsers;
-   		for(var i = 0;i<quizOptions.length;i++){
-   			var bttn = $("<button>");
-   			bttn.addClass("btn btn-secondary");
-   			bttn.text(quizOptions[i]);
- 			bttn.attr("id","btt-"+ i);
-   			$(".answerbutton").append(bttn);
-   		}
-   		// get the button clicked
-   		$(".answerbutton").on("click",".btn",function(){
-   			var selectedBtn = $(this).attr("id");
-   			console.log("selectedBtn",selectedBtn);
-   			// capture the button the user clicked
-   			// evalute if it is right or wrong answer
-   			//if(){
-   				// tell user if they are right or wrong 
-   				// if win do something 
-   				// if lose do something else
-   				// both u need to "empty" both containers (questions answerbutton)
+		$("#losses-3, #losses-4, #losses-5 ").click(function () 
+			{
+				
+				losses++;
+				console.log("losses "+losses);
+				$(".qa2").hide();
+				$(".qa3").show();
+			});
 
-   				//}
-   		})
-   		// quiz[currentQuestion].possibleAnsers.forEach(function(option){
-   		// 	var bttn = $("<button>");
-   		// 	$(".answerbutton").append(button)
-   		// })
 
-   }
+
+		$('#button-10').click(function () 
+		{
+				wins++;
+				console.log(wins)
+				$(".qa3").hide();
+				$(".qa4").show();
+			    // The link has been clicked.
+			
+			
+		});
+
+		$("#losses-6, #losses-7, #losses-8 ").click(function () 
+			{
+				
+				losses++;
+				console.log("losses "+losses);
+				$(".qa3").hide();
+				$(".qa4").show();
+			});
+		$('#button-12').click(function () 
+		{
+				wins++;
+				console.log(wins)
+				$(".qa4").hide();
+				$(".qa5").show();
+			    // The link has been clicked.
+			
+			
+		});
+
+		$("#losses-9, #losses-10, #losses-11 ").click(function () 
+			{
+				
+				losses++;
+				console.log("losses "+losses);
+				$(".qa4").hide();
+				$(".qa5").show();
+			});
+
+
+			
+
+
+	 });
+
+	
+	
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $("#button-1").click(function(){
+//     		wins++;
+//     		console.log(wins);
+//     		$(".qa1").hide();
+//     		$(".qa2").show();
+
+//     		$("#button-7").click(function(){
+//     			wins++;
+//     			console.log(wins);
+//     			$(".qa2").hide();
+//     			$(".qa3").show();
+
+//     		});
+//     			$("#button-10").click(function(){
+//     			wins++;
+//     			console.log(wins);
+//     			$(".qa3").hide();
+//     			$(".qa4").show();
+
+//     		});
+
+
+//     	 });
+
+
+//     });
+
+ 
+
+	
+
+
+
+
+	
+	
+
+	
+
+
+	    	
+	    	
+
+
+
+
+
+
+
+	  
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//checkWins();
+
+
